@@ -59,22 +59,16 @@ class TabBarExample extends React.Component {
 
   render() {
     return (
-      <TabBarIOS
-        unselectedTintColor="yellow"
-        tintColor="white"
-        unselectedItemTintColor="red"
-        barTintColor="darkslateblue">
+      <TabBarIOS barTintColor="#fff" >
         <TabBarIOS.Item
-          title="Blue Tab"
+          title="UIExplorer"
           icon={{ uri: img1_base64, scale: 3.5 }}
-          selected={this.state.selectedTab === 'blueTab'}
           >
           {this._renderView()}
         </TabBarIOS.Item>
         <TabBarIOS.Item
           icon={{ uri: img2_base64, scale: 3.5 }}
-          title="More"
-          selected={this.state.selectedTab === 'greenTab'}
+          title="Plugins"
           onPress={() => {
             this.setState({
               selectedTab: 'greenTab',
