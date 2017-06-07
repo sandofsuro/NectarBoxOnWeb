@@ -59,7 +59,8 @@ class TabBarExample extends React.Component {
 
   render() {
     return (
-      <TabBarIOS barTintColor="#fff" >
+      <TabBarIOS barTintColor="#fff"
+      >
         <TabBarIOS.Item
           title="UIExplorer"
           icon={{ uri: img1_base64, scale: 3.5 }}
@@ -84,8 +85,8 @@ class TabBarExample extends React.Component {
   }
 
     _renderView(){
-      var view = <UIExplorerApp></UIExplorerApp>
-      return (<View style={styles.listViewContent}>{view}</View>);
+     
+      return (<UIExplorerApp></UIExplorerApp>);
     }
 }
 
